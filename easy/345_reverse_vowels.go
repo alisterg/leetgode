@@ -4,7 +4,7 @@ import (
 	"unicode"
 )
 
-// Given a string s, reverse only all the vowels in the string and return the
+// Given a string s, reverseVowels only all the vowels in the string and return the
 // result.
 //
 // The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower
@@ -12,7 +12,7 @@ import (
 //
 // Example: given "IceCreAm", produces "AceCreIm"
 // Example: given "leetcode", produces "leotcede"
-func reverse(s string) string {
+func reverseVowels(s string) string {
 	foundVowels := ""
 	for i := 0; i < len(s); i++ {
 		if isVowel(s[i]) {
